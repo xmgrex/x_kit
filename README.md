@@ -27,8 +27,7 @@ import 'package:x_kit/x_kit.dart';
 [comment]: <> (TODO: Include short and useful examples for package users. Add longer examples)
 [comment]: <> (to `/example` folder. )
 
-`/example`
-
+`Example for TextStyles.`
 ```dart
 import 'package:flutter/material.dart';
 import 'package:x_kits/x_kits.dart';
@@ -54,6 +53,35 @@ class TextStyleExample extends StatelessWidget {
     );
   }
 }
+```
+
+`Example for hardcoded`
+```dart
+import 'package:x_kits/x_kits.dart';
+
+class Example extends StatelessWidget {
+  const Example({Key? key}) : super(key: key);
+  
+  @override Widget build(BuildContext context) {
+    
+    return Center(
+      /// A simple placeholder that can be used to search all the hardcoded strings
+      /// in the code (useful to identify strings that need to be localized).
+        child: Text('title large'.hardcoded);
+    );
+  }
+}
+```
+
+`Example for AsyncValueUI`
+```dart
+import 'package:x_kits/x_kits.dart';
+import 'package: flutter_riverpod/flutter_riverpod.dart'
+
+ref.listen<AsyncValue>(
+  stateNotifirePorvider.select((state) => state.value),
+  (_, state) => state.showAlertDialogOnError(context),
+);
 ```
 
 ## Additional information
