@@ -36,6 +36,8 @@ dependencies:
 
   #https://pub.dev/packages/fluentui_icons
   fluentui_icons: ^1.0.0
+  fluentui_system_icons: ^1.1.168
+  flutter_phosphor_icons: ^0.0.1+6
 
   flutter_font_icons: ^2.2.4
 

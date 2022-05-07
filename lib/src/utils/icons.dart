@@ -1,4 +1,5 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
+import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_font_icons/flutter_font_icons.dart';
 
@@ -10,10 +11,10 @@ class XIcons {
   static const applePay = Fontisto.apple_pay;
   static const bookmarkOutline = FluentSystemIcons.ic_fluent_bookmark_regular;
   static const bookmark = FluentSystemIcons.ic_fluent_bookmark_filled;
-  static const bookOutline = FluentSystemIcons.ic_fluent_notebook_regular;
-  static const book = FluentSystemIcons.ic_fluent_notebook_filled;
-  static const cart = FluentSystemIcons.ic_fluent_cast_filled;
-  static const cartOutline = FluentSystemIcons.ic_fluent_cast_regular;
+  static const book = FluentIcons.notebook_24_filled;
+  static const bookOutline = FluentIcons.notebook_24_regular;
+  static const cart = FluentIcons.cart_24_filled;
+  static const cartOutline = FluentIcons.cart_24_filled;
   static const camera = FluentSystemIcons.ic_fluent_camera_filled;
   static const clipboard = FluentSystemIcons.ic_fluent_clipboard_text_filled;
   static const clipboardOutline = FluentSystemIcons.ic_fluent_clipboard_text_regular;
