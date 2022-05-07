@@ -17,7 +17,7 @@ class XIcons {
   static const book = FluentIcons.notebook_24_filled;
   static const bookOutline = FluentIcons.notebook_24_regular;
   static const cart = FluentIcons.cart_24_filled;
-  static const cartOutline = FluentIcons.cart_24_filled;
+  static const cartOutline = FluentIcons.cart_24_regular;
   static const camera = FluentSystemIcons.ic_fluent_camera_filled;
   static const clipboard = FluentSystemIcons.ic_fluent_clipboard_text_filled;
   static const clipboardOutline = FluentSystemIcons.ic_fluent_clipboard_text_regular;
