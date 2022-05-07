@@ -2,6 +2,7 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_font_icons/flutter_font_icons.dart';
+import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 
 class XIcons {
 
@@ -9,6 +10,8 @@ class XIcons {
   static const alertOutline = FluentSystemIcons.ic_fluent_alert_regular;
   static const americanExpress = Fontisto.american_express;
   static const applePay = Fontisto.apple_pay;
+  static const arrowBendUpLeft = PhosphorIcons.arrow_bend_up_left;
+  static const arrowBendUpRight = PhosphorIcons.arrow_bend_up_right;
   static const bookmarkOutline = FluentSystemIcons.ic_fluent_bookmark_regular;
   static const bookmark = FluentSystemIcons.ic_fluent_bookmark_filled;
   static const book = FluentIcons.notebook_24_filled;
