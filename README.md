@@ -13,7 +13,7 @@ and the Flutter guide for
 
 Stop doing troublesome things.
 
-## Features
+[comment]: <> (## Features)
 
 
 ## Getting started
@@ -22,7 +22,7 @@ Stop doing troublesome things.
 import 'package:x_kit/x_kit.dart';
 ```
 
-## Usage
+## Examples
 
 [comment]: <> (TODO: Include short and useful examples for package users. Add longer examples)
 [comment]: <> (to `/example` folder. )
@@ -59,15 +59,15 @@ class TextStyleExample extends StatelessWidget {
 ```dart
 import 'package:x_kits/x_kits.dart';
 
-class Example extends StatelessWidget {
-  const Example({Key? key}) : super(key: key);
+class HardcodedExample extends StatelessWidget {
+  const HardcodedExample({Key? key}) : super(key: key);
   
   @override Widget build(BuildContext context) {
     
     return Center(
       /// A simple placeholder that can be used to search all the hardcoded strings
       /// in the code (useful to identify strings that need to be localized).
-        child: Text('title large'.hardcoded);
+        child: Text('Never going back. I am Going much harder'.hardcoded);
     );
   }
 }
