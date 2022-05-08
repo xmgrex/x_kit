@@ -3,6 +3,7 @@ library x_kit;
 export 'src/utils/logger.dart';
 export 'src/utils/transition.dart';
 export 'src/utils/icons.dart';
+export 'src/utils/symbol.dart';
 export 'src/styles/colors.dart';
 export 'src/styles/text_styles.dart';
 export 'src/styles/shadows.dart';
