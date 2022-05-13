@@ -44,8 +44,11 @@ class TextStyles {
 
   static final body = _MyTextStyleSet(
     large: _toStyle(16, 24, FontWeight.w400, 0.15),
+    ///large: _toStyle(Size: 16, height: 24, FontWeight: w400, Spacing: 0.15),
     medium: _toStyle(14, 20, FontWeight.w400, 0.25),
+    ///medium: _toStyle(Size: 14, height: 20, FontWeight: w400, Spacing: 0.25),
     small: _toStyle(12, 16, FontWeight.w400, 0.4),
+    ///small: _toStyle(Size: 12, height: 16, FontWeight: w400, Spacing: 0.4),
   );
 
   static final link = _MyTextStyleSet(
