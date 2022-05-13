@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'colors.dart';
 
+
+///body.small = Size: 12, height: 16, FontWeight: w400, Spacing: 0.4
+///
 /// Use as:
 /// Text("Hello!", styles: TextStyles.title.large.white);
 ///
@@ -60,6 +63,7 @@ class TextStyles {
 
 /// Wrapper for TextStyle
 class _MyTextStyle extends TextStyle {
+
   _MyTextStyle(TextStyle style)
       : super(
     color: style.color,

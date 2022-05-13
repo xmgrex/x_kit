@@ -11,6 +11,7 @@ class ImageFromUrl extends StatelessWidget {
     this.radius,
     this.height,
     this.width,
+    this.fit,
     Key? key,
   }) : super(key: key);
 
@@ -18,13 +19,14 @@ class ImageFromUrl extends StatelessWidget {
   final double? radius;
   final double? height;
   final double? width;
+  final BoxFit? fit;
 
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(radius ?? 6),
       child: CachedNetworkImage(
-        fit: BoxFit.cover,
+        fit: fit ?? BoxFit.cover,
         imageUrl: imageUrl,
         placeholder: (context, url) => Container(),
         errorWidget: (context, url, dynamic error) {

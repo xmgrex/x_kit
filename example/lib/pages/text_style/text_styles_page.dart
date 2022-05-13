@@ -20,6 +20,10 @@ class TextStyleExample extends StatelessWidget {
         Text('label large', style: TextStyles.label.large),
         Text('label medium', style: TextStyles.label),
         Text('label small', style: TextStyles.label.small),
+
+        Text('body large', style: TextStyles.body.large),
+        Text('body medium', style: TextStyles.body),
+        Text('body small', style: TextStyles.body.small),
       ],
     );
   }
