@@ -28,10 +28,14 @@ class ImageFromUrl extends StatelessWidget {
         fit: fit ?? BoxFit.cover,
         imageUrl: imageUrl,
         placeholder: (context, url) {
-          return Center(
-            child: LoadingAnimationWidget.fourRotatingDots(
-              color: Theme.of(context).colorScheme.onBackground,
-              size: 40,
+          return SizedBox(
+            height: height ?? 60,
+            width: width ?? 60,
+            child: Center(
+              child: LoadingAnimationWidget.fourRotatingDots(
+                color: Theme.of(context).colorScheme.onBackground,
+                size: 40,
+              ),
             ),
           );
         },
