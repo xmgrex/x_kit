@@ -34,7 +34,7 @@ class ImageFromUrl extends StatelessWidget {
             child: Center(
               child: LoadingAnimationWidget.fourRotatingDots(
                 color: Theme.of(context).colorScheme.onBackground,
-                size: 40,
+                size: 28,
               ),
             ),
           );
