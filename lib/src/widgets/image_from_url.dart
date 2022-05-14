@@ -1,9 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 import '../../x_kit.dart';
-
-
 
 class ImageFromUrl extends StatelessWidget {
   const ImageFromUrl({
@@ -28,7 +27,14 @@ class ImageFromUrl extends StatelessWidget {
       child: CachedNetworkImage(
         fit: fit ?? BoxFit.cover,
         imageUrl: imageUrl,
-        placeholder: (context, url) => Container(),
+        placeholder: (context, url) {
+          return Center(
+            child: LoadingAnimationWidget.discreteCircle(
+              color: Colors.white,
+              size: 200,
+            ),
+          );
+        },
         errorWidget: (context, url, dynamic error) {
           return Container(
             height: height ?? 60,
