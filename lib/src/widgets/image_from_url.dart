@@ -29,9 +29,9 @@ class ImageFromUrl extends StatelessWidget {
         imageUrl: imageUrl,
         placeholder: (context, url) {
           return Center(
-            child: LoadingAnimationWidget.discreteCircle(
-              color: Colors.white,
-              size: 200,
+            child: LoadingAnimationWidget.fourRotatingDots(
+              color: Theme.of(context).colorScheme.onBackground,
+              size: 40,
             ),
           );
         },
