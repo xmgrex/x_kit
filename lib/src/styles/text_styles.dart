@@ -104,6 +104,10 @@ class _MyTextStyle extends TextStyle {
   _MyTextStyle get bold => _MyTextStyle(copyWith(fontWeight: FontWeight.w700));
 
   _MyTextStyle get underline => _MyTextStyle(copyWith(decoration: TextDecoration.underline));
+
+  _MyTextStyle get lineThrough => _MyTextStyle(copyWith(decoration: TextDecoration.lineThrough));
+
+  _MyTextStyle get overline => _MyTextStyle(copyWith(decoration: TextDecoration.overline));
 }
 
 class _MyTextStyleSet extends _MyTextStyle {
