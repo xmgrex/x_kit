@@ -4,10 +4,10 @@ import 'package:loading_overlay/loading_overlay.dart' as loading_overlay;
 
 import '../../x_kit.dart';
 
-
 class LoadingOverlay extends StatelessWidget {
   const LoadingOverlay(
       {required this.child,
+      this.loadingWidget,
       required this.isLoading,
       this.bgColor,
       this.text,
@@ -15,6 +15,7 @@ class LoadingOverlay extends StatelessWidget {
       : super(key: key);
 
   final Widget child;
+  final Widget? loadingWidget;
   final bool isLoading;
   final Color? bgColor;
   final String? text;
@@ -24,16 +25,18 @@ class LoadingOverlay extends StatelessWidget {
     return loading_overlay.LoadingOverlay(
       isLoading: isLoading,
       color: bgColor ?? SystemColors.grey800,
-      progressIndicator: Scaffold(
-          backgroundColor: Colors.transparent,
-          body: Center(
-            child: LoadingAnimationWidget.discreteCircle(
-              color: Theme.of(context).primaryColor,
-              secondRingColor: Colors.orangeAccent,
-              thirdRingColor: Colors.red,
-              size: 42,
+      progressIndicator: loadingWidget ??
+          Scaffold(
+            backgroundColor: Colors.transparent,
+            body: Center(
+              child: LoadingAnimationWidget.discreteCircle(
+                color: Theme.of(context).colorScheme.primary,
+                secondRingColor: Colors.orangeAccent,
+                thirdRingColor: Colors.red,
+                size: 42,
+              ),
             ),
-          )),
+          ),
       child: child,
     );
   }
