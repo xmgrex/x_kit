@@ -51,7 +51,7 @@ class ScaleButtonWithIcon extends StatelessWidget {
               color: height == 0 ? Colors.transparent : iconColor,
             ),
             const SizedBox(width: 6),
-            Text(label!, style: Theme.of(context).primaryTextTheme.button),
+            Text(label!, style: textStyle),
           ],
         ),
       ),
