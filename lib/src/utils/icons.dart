@@ -22,6 +22,9 @@ class XIcons {
   static const clipboard = FluentSystemIcons.ic_fluent_clipboard_text_filled;
   static const clipboardOutline = FluentSystemIcons.ic_fluent_clipboard_text_regular;
   static const creditCard = Fontisto.credit_card;
+
+  static const delete = PhosphorIcons.trash;
+
   static const eyeHide = FluentSystemIcons.ic_fluent_eye_hide_regular;
   static const eyeShow = FluentSystemIcons.ic_fluent_eye_show_regular;
   static const filter = FluentSystemIcons.ic_fluent_filter_filled;
