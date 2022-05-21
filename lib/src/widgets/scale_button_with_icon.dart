@@ -39,7 +39,7 @@ class ScaleButtonWithIcon extends StatelessWidget {
         width: width ?? 142,
         curve: Curves.easeOutCirc,
         duration: const Duration(milliseconds: 400),
-        decoration: BoxDecoration(
+        foregroundDecoration: BoxDecoration(
             color: buttonColor ?? Theme.of(context).primaryColor,
             borderRadius: BorderRadius.circular(radius ?? 60)),
         child: Row(
