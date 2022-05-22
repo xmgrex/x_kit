@@ -6,12 +6,15 @@ import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 
 class XIcons {
 
+  static const accessibility = FluentSystemIcons.ic_fluent_accessibility_filled;
+  static const accessibilityOutline = FluentSystemIcons.ic_fluent_accessibility_regular;
   static const add = Icons.add_rounded;
   static const alertOutline = FluentSystemIcons.ic_fluent_alert_regular;
   static const americanExpress = Fontisto.american_express;
   static const applePay = Fontisto.apple_pay;
   static const arrowBendUpLeft = PhosphorIcons.arrow_bend_up_left;
   static const arrowBendUpRight = PhosphorIcons.arrow_bend_up_right;
+  static const bell = PhosphorIcons.arrow_bend_up_right;
   static const bookmarkOutline = FluentSystemIcons.ic_fluent_bookmark_regular;
   static const bookmark = FluentSystemIcons.ic_fluent_bookmark_filled;
   static const book = FluentIcons.notebook_24_filled;
@@ -22,9 +25,8 @@ class XIcons {
   static const clipboard = FluentSystemIcons.ic_fluent_clipboard_text_filled;
   static const clipboardOutline = FluentSystemIcons.ic_fluent_clipboard_text_regular;
   static const creditCard = Fontisto.credit_card;
-
+  static const creditCard2 = PhosphorIcons.credit_card;
   static const delete = PhosphorIcons.trash;
-
   static const eyeHide = FluentSystemIcons.ic_fluent_eye_hide_regular;
   static const eyeShow = FluentSystemIcons.ic_fluent_eye_show_regular;
   static const filter = FluentSystemIcons.ic_fluent_filter_filled;
@@ -36,6 +38,10 @@ class XIcons {
   static const home = FluentSystemIcons.ic_fluent_home_filled;
   static const homeOutline = FluentSystemIcons.ic_fluent_home_regular;
   static const list = FluentSystemIcons.ic_fluent_list_filled;
+  static const location = FluentSystemIcons.ic_fluent_location_filled;
+  static const locationOutline = FluentSystemIcons.ic_fluent_location_regular;
+  static const mapPin = PhosphorIcons.map_pin_fill;
+  static const mapPinOutline = PhosphorIcons.map_pin;
   static const mastercard = Fontisto.mastercard;
   static const minusCircle = Icons.remove_circle_outline;
   static const money = Fontisto.money_symbol;
@@ -43,6 +49,8 @@ class XIcons {
   static const plusCircle = Icons.add_circle_outline;
   static const person = FluentSystemIcons.ic_fluent_person_filled;
   static const personOutline = FluentSystemIcons.ic_fluent_person_regular;
+  static const person2 = PhosphorIcons.person_fill;
+  static const personOutline2 = PhosphorIcons.person;
   static const search = FluentSystemIcons.ic_fluent_search_filled;
   static const settings = FluentSystemIcons.ic_fluent_settings_filled;
   static const settingsOutline = FluentSystemIcons.ic_fluent_settings_regular;
