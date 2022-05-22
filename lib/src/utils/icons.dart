@@ -14,7 +14,8 @@ class XIcons {
   static const applePay = Fontisto.apple_pay;
   static const arrowBendUpLeft = PhosphorIcons.arrow_bend_up_left;
   static const arrowBendUpRight = PhosphorIcons.arrow_bend_up_right;
-  static const bell = PhosphorIcons.arrow_bend_up_right;
+  static const bell = PhosphorIcons.bell_fill;
+  static const bellOutline = PhosphorIcons.bell;
   static const bookmarkOutline = FluentSystemIcons.ic_fluent_bookmark_regular;
   static const bookmark = FluentSystemIcons.ic_fluent_bookmark_filled;
   static const book = FluentIcons.notebook_24_filled;
