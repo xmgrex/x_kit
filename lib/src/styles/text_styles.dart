@@ -27,14 +27,20 @@ class TextStyles {
     );
   }
 
+  static final display = _MyTextStyleSet(
+    large: _toStyle(57, 64, FontWeight.w500, 0),
+    medium: _toStyle(45, 52, FontWeight.w500, 0),
+    small: _toStyle(36, 44, FontWeight.w500, 0),
+  );
+
   static final headline = _MyTextStyleSet(
-    large: _toStyle(28, 28, FontWeight.w400, 0),
-    medium: _toStyle(26, 24, FontWeight.w500, 0.15),
-    small: _toStyle(24, 20, FontWeight.w500, 0.1),
+    large: _toStyle(32, 40, FontWeight.w500, 0),
+    medium: _toStyle(28, 36, FontWeight.w500, 0),
+    small: _toStyle(24, 32, FontWeight.w500, 0),
   );
 
   static final title = _MyTextStyleSet(
-    large: _toStyle(22, 28, FontWeight.w400, 0),
+    large: _toStyle(22, 28, FontWeight.w500, 0),
     medium: _toStyle(16, 24, FontWeight.w500, 0.15),
     small: _toStyle(14, 20, FontWeight.w500, 0.1),
   );
