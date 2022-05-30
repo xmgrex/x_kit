@@ -8,7 +8,7 @@ class OverrideExpandableController extends ExpandableController {
   static final instance = OverrideExpandableController._();
 }
 
-final shape = RoundedRectangleBorder(
+final _shape = RoundedRectangleBorder(
   borderRadius: BorderRadius.circular(0),
 );
 
@@ -21,6 +21,7 @@ class Expandable extends StatelessWidget {
       this.color,
       this.iconColor,
       this.elevation,
+      this.shape,
       Key? key})
       : super(key: key);
 
@@ -31,6 +32,7 @@ class Expandable extends StatelessWidget {
   final Color? color;
   final Color? iconColor;
   final double? elevation;
+  final ShapeBorder? shape;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +40,7 @@ class Expandable extends StatelessWidget {
       elevation: elevation ?? 0.0,
       margin: EdgeInsets.zero,
       color: color,
-      shape: shape,
+      shape: shape ?? _shape,
       child: ExpandablePanel(
         controller: expandableController,
         theme: isExpand
