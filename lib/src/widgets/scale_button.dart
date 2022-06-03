@@ -35,10 +35,15 @@ class ScaleButton extends StatelessWidget {
         width: width ?? double.infinity,
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
-            color: color ?? Theme.of(context).colorScheme.tertiary,
+            color: color ?? Theme.of(context).colorScheme.primary,
             borderRadius: BorderRadius.circular(radius ?? 6)),
         child: Center(
-          child: Text(label, style: style ?? TextStyles.label.large.bold.black),
+          child: Text(
+            label,
+            style: style ?? TextStyles.label.large.bold.copyWith(
+              color: Theme.of(context).colorScheme.surface,
+            ),
+          ),
         ),
       ),
     );
