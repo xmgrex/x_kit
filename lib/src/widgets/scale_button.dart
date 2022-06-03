@@ -38,7 +38,7 @@ class ScaleButton extends StatelessWidget {
             color: color ?? Theme.of(context).colorScheme.tertiary,
             borderRadius: BorderRadius.circular(radius ?? 6)),
         child: Center(
-          child: Text(label, style: style ?? TextStyles.label.large.bold),
+          child: Text(label, style: style ?? TextStyles.label.large.bold.black),
         ),
       ),
     );
