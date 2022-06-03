@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_scale_tap/flutter_scale_tap.dart';
 
+import '../../x_kit.dart';
+
 class ScaleButton extends StatelessWidget {
   const ScaleButton({
     Key? key,
@@ -33,10 +35,10 @@ class ScaleButton extends StatelessWidget {
         width: width ?? double.infinity,
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
-            color: color ?? Theme.of(context).primaryColor,
+            color: color ?? Theme.of(context).colorScheme.tertiary,
             borderRadius: BorderRadius.circular(radius ?? 6)),
         child: Center(
-          child: Text(label, style: style),
+          child: Text(label, style: style ?? TextStyles.label.large.bold),
         ),
       ),
     );
