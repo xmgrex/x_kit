@@ -28,42 +28,54 @@ class TextStyles {
   }
 
   static final display = _MyTextStyleSet(
+    ///_toStyle(57, 64, FontWeight.w500, 0),
     large: _toStyle(57, 64, FontWeight.w500, 0),
+    ///_toStyle(45, 52, FontWeight.w500, 0),
     medium: _toStyle(45, 52, FontWeight.w500, 0),
+    ///_toStyle(32, 40, FontWeight.w500, 0),
     small: _toStyle(36, 44, FontWeight.w500, 0),
   );
 
   static final headline = _MyTextStyleSet(
+    ///_toStyle(32, 40, FontWeight.w500, 0),
     large: _toStyle(32, 40, FontWeight.w500, 0),
+    ///_toStyle(28, 36, FontWeight.w500, 0),
     medium: _toStyle(28, 36, FontWeight.w500, 0),
+    ///_toStyle(24, 32, FontWeight.w500, 0),
     small: _toStyle(24, 32, FontWeight.w500, 0),
   );
 
   static final title = _MyTextStyleSet(
+    ///_toStyle(22, 28, FontWeight.w500, 0),
     large: _toStyle(22, 28, FontWeight.w500, 0),
+    ///_toStyle(16, 24, FontWeight.w500, 0.15),
     medium: _toStyle(16, 24, FontWeight.w500, 0.15),
+    ///_toStyle(14, 20, FontWeight.w500, 0.1),
     small: _toStyle(14, 20, FontWeight.w500, 0.1),
   );
 
   static final label = _MyTextStyleSet(
+    ///_toStyle(14, 20, FontWeight.w500, 0.1),
     large: _toStyle(14, 20, FontWeight.w500, 0.1),
+    ///_toStyle(12, 16, FontWeight.w500, 0.5),
     medium: _toStyle(12, 16, FontWeight.w500, 0.5),
+    ///_toStyle(11, 16, FontWeight.w500, 0.5),
     small: _toStyle(11, 16, FontWeight.w500, 0.5),
   );
 
   static final body = _MyTextStyleSet(
-    large: _toStyle(16, 24, FontWeight.w400, 0.15),
     ///large: _toStyle(Size: 16, height: 24, FontWeight: w400, Spacing: 0.15),
-    medium: _toStyle(14, 20, FontWeight.w400, 0.25),
+    large: _toStyle(16, 24, FontWeight.w500, 0.15),
     ///medium: _toStyle(Size: 14, height: 20, FontWeight: w400, Spacing: 0.25),
-    small: _toStyle(12, 16, FontWeight.w400, 0.4),
+    medium: _toStyle(14, 20, FontWeight.w500, 0.25),
     ///small: _toStyle(Size: 12, height: 16, FontWeight: w400, Spacing: 0.4),
+    small: _toStyle(12, 16, FontWeight.w500, 0.4),
   );
 
   static final link = _MyTextStyleSet(
-    large: _toStyle(16, 24, FontWeight.w400, 0.15, color: Colors.blueAccent),
-    medium: _toStyle(14, 20, FontWeight.w400, 0.25, color: Colors.blueAccent),
-    small: _toStyle(12, 16, FontWeight.w400, 0.4, color: Colors.blueAccent),
+    large: _toStyle(16, 24, FontWeight.w500, 0.15, color: Colors.blueAccent),
+    medium: _toStyle(14, 20, FontWeight.w500, 0.25, color: Colors.blueAccent),
+    small: _toStyle(12, 16, FontWeight.w500, 0.4, color: Colors.blueAccent),
   );
 }
 
@@ -106,8 +118,12 @@ class _MyTextStyle extends TextStyle {
   _MyTextStyle get error => _MyTextStyle(copyWith(color: SystemColors.error));
 
   _MyTextStyle get warning => _MyTextStyle(copyWith(color: SystemColors.warning));
-
+/// FontWeight.w700
   _MyTextStyle get bold => _MyTextStyle(copyWith(fontWeight: FontWeight.w700));
+/// FontWeight.w600
+  _MyTextStyle get medium => _MyTextStyle(copyWith(fontWeight: FontWeight.w600));
+/// FontWeight.w400
+  _MyTextStyle get light => _MyTextStyle(copyWith(fontWeight: FontWeight.w500));
 
   _MyTextStyle get underline => _MyTextStyle(copyWith(decoration: TextDecoration.underline));
 

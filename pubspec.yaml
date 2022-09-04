@@ -42,7 +42,7 @@ dependencies:
   flutter_font_icons: ^2.2.4
 
   #https://pub.dev/packages/adaptive_dialog/install
-  adaptive_dialog: ^1.6.2+1
+  adaptive_dialog: ^1.7.0
 
   #https://pub.dev/packages/currency_formatter
   currency_formatter: ^1.2.1

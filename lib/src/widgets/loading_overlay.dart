@@ -24,7 +24,7 @@ class LoadingOverlay extends StatelessWidget {
   Widget build(BuildContext context) {
     return loading_overlay.LoadingOverlay(
       isLoading: isLoading,
-      color: bgColor ?? SystemColors.grey800,
+      color: bgColor ?? SystemColors.grey900,
       progressIndicator: loadingWidget ??
           Scaffold(
             backgroundColor: Colors.transparent,

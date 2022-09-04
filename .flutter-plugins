@@ -1,9 +1,10 @@
 # This is a generated file; do not edit or check into version control.
-macos_ui=/Users/kyouyagenki/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/macos_ui-0.16.0/
-path_provider=/Users/kyouyagenki/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.9/
-path_provider_android=/Users/kyouyagenki/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.13/
-path_provider_ios=/Users/kyouyagenki/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.8/
-path_provider_linux=/Users/kyouyagenki/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.5/
-path_provider_macos=/Users/kyouyagenki/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.5/
-path_provider_windows=/Users/kyouyagenki/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.5/
-sqflite=/Users/kyouyagenki/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.2+1/
+dynamic_color=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/dynamic_color-1.4.0/
+macos_ui=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/macos_ui-1.7.1/
+path_provider=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.9/
+path_provider_android=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.13/
+path_provider_ios=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.8/
+path_provider_linux=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.5/
+path_provider_macos=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.5/
+path_provider_windows=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.5/
+sqflite=/Users/kyouyagenki/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.2+1/
