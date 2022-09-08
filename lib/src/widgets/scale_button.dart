@@ -13,6 +13,7 @@ class ScaleButton extends StatelessWidget {
     this.radius,
     this.style,
     this.color,
+    this.enableFeedback,
   }) : super(key: key);
   final String label;
   final VoidCallback onPressed;
@@ -21,11 +22,12 @@ class ScaleButton extends StatelessWidget {
   final double? height;
   final double? radius;
   final Color? color;
+  final bool? enableFeedback;
 
   @override
   Widget build(BuildContext context) {
     return ScaleTap(
-      enableFeedback: false,
+      enableFeedback: enableFeedback ?? true,
       duration: const Duration(milliseconds: 300),
       onPressed: onPressed,
       child: AnimatedContainer(
