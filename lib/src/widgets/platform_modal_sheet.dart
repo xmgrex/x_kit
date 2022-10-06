@@ -6,8 +6,8 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import '../styles/sizes.dart';
 
 Future<void> showPlatformModalBottomSheet({
-  required Widget widget,
   required BuildContext context,
+  required Widget widget,
   Color? barrierColor,
 }) async {
   if (Platform.isIOS) {
