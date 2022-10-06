@@ -31,8 +31,8 @@ Future<void> showPlatformModalBottomSheet({
 }
 
 Future<void> showHalfModalBottomSheet({
-  required Widget widget,
   required BuildContext context,
+  required Widget widget,
   double? height,
   Color? barrierColor,
   Color? contentColor,
