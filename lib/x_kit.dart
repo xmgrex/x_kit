@@ -30,3 +30,4 @@ export 'package:fluentui_system_icons/fluentui_system_icons.dart';
 export 'package:flutter_font_icons/flutter_font_icons.dart';
 export 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 export 'package:flutter_scale_tap/flutter_scale_tap.dart';
+export 'package:expandable/expandable.dart';

@@ -1,5 +1,5 @@
-import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
+import 'package:x_kit/x_kit.dart';
 
 
 class OverrideExpandableController extends ExpandableController {
@@ -12,8 +12,8 @@ final _shape = RoundedRectangleBorder(
   borderRadius: BorderRadius.circular(0),
 );
 
-class Expandable extends StatelessWidget {
-  const Expandable(
+class ExpandableWidget extends StatelessWidget {
+  const ExpandableWidget(
       {required this.child,
       required this.header,
       required this.isExpand,
