@@ -23,3 +23,4 @@ export 'src/flutter_cool_toolbar/toolbar_item.dart';
 export 'src/flutter_cool_toolbar/slide_toolbar.dart';
 export 'src/localizations/string_hardcoded.dart';
 export 'src/riverpod/async_value_ui.dart';
+export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
