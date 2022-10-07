@@ -11,13 +11,14 @@ Future<void> showPlatformModalBottomSheet({
   Color? barrierColor,
   Duration? duration,
   Curve? animationCurve,
+  Curve? previousRouteAnimationCurve,
 }) async {
   if (Platform.isIOS) {
     await showCupertinoModalBottomSheet<void>(
       expand: true,
       animationCurve: animationCurve,
       barrierColor: barrierColor ?? Colors.black.withOpacity(.8),
-      previousRouteAnimationCurve: Curves.easeOutCirc,
+      previousRouteAnimationCurve: previousRouteAnimationCurve,
       context: context,
       duration: duration,
       builder: (context) => widget,
