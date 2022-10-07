@@ -12,7 +12,7 @@ dependencies:
     sdk: flutter
 
   #https://pub.dev/packages/flutter_riverpod
-  flutter_riverpod: ^2.0.0-dev.5
+  flutter_riverpod: ^2.0.2
 
   simple_logger: ^1.9.0
 
@@ -32,7 +32,7 @@ dependencies:
   loading_overlay: ^0.3.0
 
   #https://pub.dev/packages/loading_animation_widget
-  loading_animation_widget: ^1.1.0+5
+  loading_animation_widget: ^1.2.0+3
 
   #https://pub.dev/packages/fluentui_icons
   fluentui_icons: ^1.0.0
@@ -42,10 +42,10 @@ dependencies:
   flutter_font_icons: ^2.2.4
 
   #https://pub.dev/packages/adaptive_dialog/install
-  adaptive_dialog: ^1.7.0
+  adaptive_dialog: ^1.8.0
 
   #https://pub.dev/packages/currency_formatter
-  currency_formatter: ^1.2.1
+  currency_formatter: ^2.0.0
 
 dev_dependencies:
   flutter_test:
