@@ -9,21 +9,23 @@ Future<void> showPlatformModalBottomSheet({
   required BuildContext context,
   required Widget widget,
   Color? barrierColor,
+  Duration? duration,
+  Curve? animationCurve,
 }) async {
   if (Platform.isIOS) {
     await showCupertinoModalBottomSheet<void>(
       expand: true,
-      animationCurve: Curves.easeOutCirc,
+      animationCurve: animationCurve,
       barrierColor: barrierColor ?? Colors.black.withOpacity(.8),
       previousRouteAnimationCurve: Curves.easeOutCirc,
       context: context,
-      duration: const Duration(milliseconds: 300),
+      duration: duration,
       builder: (context) => widget,
     );
   } else {
     await showMaterialModalBottomSheet<void>(
-      animationCurve: Curves.easeOutCirc,
-      duration: const Duration(milliseconds: 300),
+      animationCurve: animationCurve,
+      duration: duration,
       context: context,
       builder: (context) => widget,
     );
