@@ -7,3 +7,4 @@ export './animated_scale_button.dart';
 export './flutter_cool_toolbar/cool_toolbar.dart';
 export './flutter_cool_toolbar/toolbar_item.dart';
 export './flutter_cool_toolbar/slide_toolbar.dart';
+export './circle_icon_button.dart';
