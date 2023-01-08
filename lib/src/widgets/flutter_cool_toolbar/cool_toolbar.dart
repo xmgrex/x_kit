@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_scale_tap/flutter_scale_tap.dart';
 
-import '../../x_kit.dart';
+import '../../../x_kit.dart';
 import 'constants.dart';
 
 class CoolToolbar extends StatefulWidget {

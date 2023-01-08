@@ -23,7 +23,11 @@ class TextStyleExample extends StatelessWidget {
 
         Text('body large', style: TextStyles.body.large),
         Text('body medium', style: TextStyles.body),
-        Text('body small', style: TextStyles.body.small),
+        Text('body small', style: TextStyles.caption),
+
+        Text('Change font color', style: TextStyles.caption.setColor(Colors.amber)),
+
+        Text('body small', style: Theme.of(context).textTheme.bodyLarge),
       ],
     );
   }

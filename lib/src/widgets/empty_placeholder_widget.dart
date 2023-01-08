@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:x_kit/x_kit.dart';
 
 /// Placeholder widget showing a message and CTA to go back to the home screen.
 class EmptyPlaceholderWidget extends StatelessWidget {
@@ -10,7 +9,7 @@ class EmptyPlaceholderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(Sizes.p16),
+      padding: const EdgeInsets.all(16.0),
       child: Center(
         child: Text(
           message,
