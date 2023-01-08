@@ -6,12 +6,13 @@ class CircleIconButton extends StatelessWidget {
       required this.icon,
       this.iconSize,
       this.borderColor,
-      this.backgroundColor});
+      this.backgroundColor, this.onPressed});
 
   final IconData icon;
   final double? iconSize;
   final Color? borderColor;
   final Color? backgroundColor;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class CircleIconButton extends StatelessWidget {
           color: borderColor ?? Theme.of(context).dividerColor.withOpacity(.5),
         ),
       ),
-      onPressed: () => Navigator.pop(context),
+      onPressed: onPressed,
       icon: Icon(icon, size: iconSize),
     );
   }
