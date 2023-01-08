@@ -12,7 +12,7 @@ class ModalBottomSheetPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ScaleButton(
+            AnimatedScaleButton(
               height: 48,
               width: 200,
               label: 'show',
@@ -24,7 +24,7 @@ class ModalBottomSheetPage extends StatelessWidget {
               },
             ),
             const SizedBox(height: 12),
-            ScaleButton(
+            AnimatedScaleButton(
               height: 48,
               width: 200,
               label: 'half',
