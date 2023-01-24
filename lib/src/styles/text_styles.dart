@@ -90,7 +90,6 @@ class TextStyles {
 
   ///* (size: 11, height: 16, FontWeight.w500, spacing: 0.4),
   static final overline = label.small;
-
 }
 
 /// Wrapper for TextStyle
@@ -162,8 +161,6 @@ class _MyTextStyle extends TextStyle {
   ///* Colors can be set
   ///
   _MyTextStyle setColor(Color color) => _MyTextStyle(copyWith(color: color));
-
-  
 }
 
 class _MyTextStyleSet extends _MyTextStyle {
@@ -178,4 +175,17 @@ class _MyTextStyleSet extends _MyTextStyle {
       : large = _MyTextStyle(large),
         small = _MyTextStyle(small),
         super(medium);
+}
+
+extension ExtendTextStyle on TextStyle {
+  TextStyle onTheme(BuildContext context) {
+    final isDarkOn = Theme.of(context).brightness == Brightness.dark;
+    return copyWith(color: isDarkOn ? Colors.white : Colors.black);
+  }
+
+  TextStyle colorFromBackground(Color background) {
+    return copyWith(
+      color: background.computeLuminance() > 0.3 ? Colors.black : Colors.white,
+    );
+  }
 }

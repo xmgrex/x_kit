@@ -48,6 +48,8 @@ dependencies:
   #https://pub.dev/packages/currency_formatter
   currency_formatter: ^2.0.0
 
+  nested: ^1.0.0
+
   go_router: ^6.0.1
 
 dev_dependencies:

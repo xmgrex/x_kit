@@ -1,0 +1,8 @@
+{
+    "separators.enabledSymbols": [
+        "Classes",
+        "Enums",
+        "Functions",
+        "Methods"
+    ]
+}
