@@ -6,7 +6,7 @@ export 'src/widgets/widgets.dart';
 export 'src/riverpod/riverpod.dart';
 export 'src/styles/styles.dart';
 
-export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+// export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 export 'package:cached_network_image/cached_network_image.dart';
 export 'package:fluentui_icons/fluentui_icons.dart';
 export 'package:fluentui_system_icons/fluentui_system_icons.dart';
