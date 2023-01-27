@@ -20,7 +20,7 @@ dependencies:
   cached_network_image: ^3.2.2
 
   #https://pub.dev/packages/modal_bottom_sheet
-  modal_bottom_sheet: ^2.1.2
+  # modal_bottom_sheet: ^2.1.2
 
   # https://pub.dev/packages/expandable
   expandable: ^5.0.1

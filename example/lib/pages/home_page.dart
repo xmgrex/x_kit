@@ -8,7 +8,7 @@ import 'modal_bottom_sheet/modal_bottom_sheet_page.dart';
 
 const pages = [
   TextStyleExample(),
-  ModalBottomSheetPage(),
+  // ModalBottomSheetPage(),
   CupertinoTextFieldTest(),
   SizedBox(child: Text('1')),
   SizedBox(child: Text('2')),
