@@ -11,7 +11,7 @@ const loadingSpinner = SizedBox(
 
 class AnimatedScaleButton extends ScaleTap {
   AnimatedScaleButton({
-    required String label,
+    required Widget child,
     dynamic Function()? onPressed,
     bool enableFeedback = true,
     bool isScale = true,
@@ -30,6 +30,8 @@ class AnimatedScaleButton extends ScaleTap {
     Color? iconColor,
     bool isLoading = false,
     Widget loadingWidget = loadingSpinner,
+    Border? border,
+    bool filled = true,
   }) : super(
           enableFeedback: enableFeedback,
           scaleMinValue: isScale ? scaleMinValue : 1,
@@ -43,14 +45,15 @@ class AnimatedScaleButton extends ScaleTap {
             width: width,
             duration: animationDuration,
             decoration: BoxDecoration(
-              color: color,
+              color: filled ? color : Colors.transparent,
               borderRadius: BorderRadius.circular(radius),
+              border: border,
             ),
             child: Center(
               child: isLoading
                   ? loadingWidget
                   : icon == null
-                      ? Text(label, style: style)
+                      ? child
                       : Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -61,7 +64,7 @@ class AnimatedScaleButton extends ScaleTap {
                                   height == 0 ? Colors.transparent : iconColor,
                             ),
                             const SizedBox(width: 4),
-                            Text(label, style: style),
+                            child,
                           ],
                         ),
             ),

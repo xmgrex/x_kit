@@ -95,6 +95,7 @@ class CupertinoTextStyles {
     regular: _toStyle(11, 13, FontWeight.w400, 0.07),
     bold: _toStyle(11, 13, FontWeight.w600, 0.07),
   );
+
 }
 
 /// Wrapper for TextStyle
