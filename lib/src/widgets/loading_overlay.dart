@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:loading_overlay/loading_overlay.dart' as loading_overlay;
+import 'dart:io';
 
-import '../../x_kit.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:loading_overlay/loading_overlay.dart' as loading_overlay;
 
 class LoadingOverlay extends StatelessWidget {
   const LoadingOverlay(
@@ -25,19 +25,31 @@ class LoadingOverlay extends StatelessWidget {
     return loading_overlay.LoadingOverlay(
       isLoading: isLoading,
       color: backgroundColor ?? Colors.black.withOpacity(.5),
-      progressIndicator: loadingWidget ??
-          Scaffold(
-            backgroundColor: Colors.transparent,
-            body: Center(
-              child: LoadingAnimationWidget.discreteCircle(
-                color: Theme.of(context).colorScheme.primary,
-                secondRingColor: Colors.orangeAccent,
-                thirdRingColor: Colors.red,
-                size: 42,
-              ),
-            ),
-          ),
+      progressIndicator: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: Center(
+          child: 
+          Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          loadingWidget ?? const _LoadingWidget(),
+          Text(text ?? '処理中'),
+        ],
+      ),
+        ),
+      ),
       child: child,
     );
+  }
+}
+
+class _LoadingWidget extends StatelessWidget {
+  const _LoadingWidget();
+
+  @override
+  Widget build(BuildContext context) {
+    return Platform.isIOS
+        ? const CupertinoActivityIndicator()
+        : const CircularProgressIndicator();
   }
 }
