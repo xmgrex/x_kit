@@ -5,20 +5,22 @@ import 'package:flutter/material.dart';
 import 'package:loading_overlay/loading_overlay.dart' as loading_overlay;
 
 class LoadingOverlay extends StatelessWidget {
-  const LoadingOverlay(
-      {required this.child,
-      this.loadingWidget,
-      required this.isLoading,
-      this.backgroundColor,
-      this.text,
-      Key? key})
-      : super(key: key);
+  const LoadingOverlay({
+    super.key,
+    required this.isLoading,
+    required this.child,
+    this.loadingWidget,
+    this.text,
+    this.textStyle,
+    this.backgroundColor,
+  });
 
   final Widget child;
   final Widget? loadingWidget;
   final bool isLoading;
   final Color? backgroundColor;
   final String? text;
+  final TextStyle? textStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -28,14 +30,16 @@ class LoadingOverlay extends StatelessWidget {
       progressIndicator: Scaffold(
         backgroundColor: Colors.transparent,
         body: Center(
-          child: 
-          Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          loadingWidget ?? const _LoadingWidget(),
-          Text(text ?? '処理中'),
-        ],
-      ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              loadingWidget ?? const _LoadingWidget(),
+              Material(
+                color: Colors.transparent,
+                child: Text(text ?? '処理中', style: textStyle),
+              ),
+            ],
+          ),
         ),
       ),
       child: child,
