@@ -5,6 +5,7 @@ export 'src/utils/utils.dart';
 export 'src/widgets/widgets.dart';
 export 'src/riverpod/riverpod.dart';
 export 'src/styles/styles.dart';
+export 'src/extensions/extensions.dart';
 
 // export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 export 'package:cached_network_image/cached_network_image.dart';
