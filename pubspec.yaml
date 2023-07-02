@@ -15,6 +15,7 @@ dependencies:
   flutter_riverpod: ^2.3.6
 
   simple_logger: ^1.9.0
+  talker_flutter: ^3.1.5
 
   # https://pub.dev/packages/cached_network_image
   cached_network_image: ^3.2.2

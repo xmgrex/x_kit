@@ -1,8 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 enum TransitionEffect {
   fade,
@@ -60,12 +58,12 @@ class Transition {
 
   /// Called to obtain the child widget.
   Route<dynamic> builder() {
-    Route<dynamic> _route;
+    Route<dynamic> route;
     transitionEffect == TransitionEffect.rightToLeft && Platform.isIOS
-        ? _route = CupertinoPageRoute<dynamic>(builder: (context) {
+        ? route = CupertinoPageRoute<dynamic>(builder: (context) {
             return child;
           })
-        : _route = PageRouteBuilder<Route<dynamic>>(
+        : route = PageRouteBuilder<Route<dynamic>>(
             settings: settings,
             transitionDuration: duration ??
                 const Duration(
@@ -120,6 +118,6 @@ class Transition {
               }
             },
           );
-    return _route;
+    return route;
   }
 }
