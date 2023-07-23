@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:example/cool_toolbar/items.dart';
 import 'package:x_kit/x_kit.dart';
 
-import 'modal_bottom_sheet/modal_bottom_sheet_page.dart';
-
 const pages = [
   TextStyleExample(),
   // ModalBottomSheetPage(),
