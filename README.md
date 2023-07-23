@@ -2,6 +2,13 @@ A collection of convenient widgets and utils
 
 ## Getting started
 
+```yaml
+# pub get
+  x_kit:
+    git:
+      url: https://github.com/xmgrex/x_kit
+```
+
 ```dart
 import 'package:x_kit/x_kit.dart';
 ```
