@@ -140,7 +140,7 @@ class _MyTextStyle extends TextStyle {
   _MyTextStyle get link => _MyTextStyle(copyWith(color: Colors.blueAccent));
 
   /// FontWeight.w700
-  _MyTextStyle get bold => _MyTextStyle(copyWith(fontWeight: FontWeight.bold));
+  _MyTextStyle get bold => _MyTextStyle(copyWith(fontWeight: FontWeight.w700));
 
   /// FontWeight.w600
   _MyTextStyle get medium =>
