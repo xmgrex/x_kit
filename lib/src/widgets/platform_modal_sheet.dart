@@ -8,8 +8,8 @@ Future<void> showPlatformModalBottomSheet({
   required Widget widget,
   Color? barrierColor,
   Duration duration = const Duration(milliseconds: 300),
-  Curve animationCurve = Curves.easeOutQuint,
-  Curve previousRouteAnimationCurve = Curves.easeOutQuint,
+  Curve animationCurve = Curves.easeOutCirc,
+  Curve previousRouteAnimationCurve = Curves.easeOutCirc,
   bool expand = false,
   bool enableDrag = true,
 }) async {
