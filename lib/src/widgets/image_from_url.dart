@@ -25,6 +25,8 @@ class ImageFromUrl extends StatelessWidget {
       child: CachedNetworkImage(
         fit: fit ?? BoxFit.cover,
         imageUrl: imageUrl,
+        height: height,
+        width: width,
         placeholder: (context, url) {
           return SizedBox(
             height: height,
