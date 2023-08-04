@@ -9,6 +9,7 @@ class ImageFromUrl extends StatelessWidget {
     this.height = 56,
     this.width = 56,
     this.fit,
+    this.errorWidgetBackground,
     Key? key,
   }) : super(key: key);
 
@@ -17,6 +18,7 @@ class ImageFromUrl extends StatelessWidget {
   final double height;
   final double width;
   final BoxFit? fit;
+  final Color? errorWidgetBackground;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +45,7 @@ class ImageFromUrl extends StatelessWidget {
           return Container(
             height: height,
             width: width,
-            color: Colors.grey[400],
+            color: errorWidgetBackground ?? Colors.grey[400],
             child: const Icon(Icons.error),
           );
         },
