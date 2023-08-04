@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class ImageFromUrl extends StatelessWidget {
   const ImageFromUrl({
@@ -10,6 +9,7 @@ class ImageFromUrl extends StatelessWidget {
     this.width = 56,
     this.fit,
     this.errorWidgetBackground,
+    this.placeholder,
     Key? key,
   }) : super(key: key);
 
@@ -19,6 +19,7 @@ class ImageFromUrl extends StatelessWidget {
   final double width;
   final BoxFit? fit;
   final Color? errorWidgetBackground;
+  final Widget Function(BuildContext, String)? placeholder;
 
   @override
   Widget build(BuildContext context) {
@@ -29,18 +30,16 @@ class ImageFromUrl extends StatelessWidget {
         imageUrl: imageUrl,
         height: height,
         width: width,
-        placeholder: (context, url) {
-          return SizedBox(
-            height: height,
-            width: width,
-            child: Center(
-              child: LoadingAnimationWidget.fourRotatingDots(
-                color: Theme.of(context).colorScheme.onBackground,
-                size: 28,
-              ),
-            ),
-          );
-        },
+        placeholder: placeholder ??
+            (context, url) {
+              return SizedBox(
+                height: height,
+                width: width,
+                child: const Center(
+                  child: CircularProgressIndicator.adaptive(),
+                ),
+              );
+            },
         errorWidget: (context, url, dynamic error) {
           return Container(
             height: height,
