@@ -23,6 +23,14 @@ class ImageFromUrl extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (imageUrl.isEmpty) {
+      return Container(
+        height: height,
+        width: width,
+        color: errorWidgetBackground ?? Colors.grey[400],
+        child: const Icon(Icons.error),
+      );
+    }
     return ClipRRect(
       borderRadius: BorderRadius.circular(radius ?? 6),
       child: CachedNetworkImage(
