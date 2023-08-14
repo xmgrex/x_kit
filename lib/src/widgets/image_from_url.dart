@@ -27,7 +27,10 @@ class ImageFromUrl extends StatelessWidget {
       return Container(
         height: height,
         width: width,
-        color: errorWidgetBackground ?? Colors.grey[400],
+        decoration: BoxDecoration(
+          color: errorWidgetBackground ?? Colors.grey[400],
+          borderRadius: BorderRadius.circular(radius ?? 6),
+        ),
         child: const Icon(Icons.error),
       );
     }
