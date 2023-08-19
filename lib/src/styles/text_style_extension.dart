@@ -17,7 +17,7 @@ extension ExtendTextStyle on TextStyle {
   TextStyle get bold => copyWith(fontWeight: FontWeight.w700);
 
 //* fontSize: 57, height: 64, fontWeight: FontWeight.w400, letterSpacing: 0,
-  TextStyle get disPlayLarge => copyWith(
+  TextStyle get displayLarge => copyWith(
         fontSize: 57,
         height: 64,
         fontWeight: FontWeight.w400,
@@ -25,7 +25,7 @@ extension ExtendTextStyle on TextStyle {
       );
 
 //* fontSize: 46, height: 52, fontWeight: FontWeight.w400, letterSpacing: 0,
-  TextStyle get disPlayMedium => copyWith(
+  TextStyle get displayMedium => copyWith(
         fontSize: 46,
         height: 52,
         fontWeight: FontWeight.w400,
@@ -33,7 +33,7 @@ extension ExtendTextStyle on TextStyle {
       );
 
 //* fontSize: 34, height: 40, fontWeight: FontWeight.w400, letterSpacing: 0,
-  TextStyle get disPlaySmall => copyWith(
+  TextStyle get displaySmall => copyWith(
         fontSize: 34,
         height: 40,
         fontWeight: FontWeight.w400,
