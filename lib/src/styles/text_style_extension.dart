@@ -59,7 +59,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 24, height: 32, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get headlineSmall => copyWith(
         fontSize: 24,
-        height: 32,
+        height: 32 / 24,
         fontWeight: FontWeight.w400,
         letterSpacing: 0,
       );
@@ -91,7 +91,7 @@ extension ExtendTextStyle on TextStyle {
 ///* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
   TextStyle get labelLarge => copyWith(
         fontSize: 14,
-        height: 20,
+        height: 20 / 14,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.1,
       );
