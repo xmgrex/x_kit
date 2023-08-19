@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of styles;
 
 ///* Used Material Design3
 ///
@@ -175,17 +175,4 @@ class _MyTextStyleSet extends _MyTextStyle {
       : large = _MyTextStyle(large),
         small = _MyTextStyle(small),
         super(medium);
-}
-
-extension ExtendTextStyle on TextStyle {
-  TextStyle onTheme(BuildContext context) {
-    final isDarkOn = Theme.of(context).brightness == Brightness.dark;
-    return copyWith(color: isDarkOn ? Colors.white : Colors.black);
-  }
-
-  TextStyle colorFromBackground(Color background) {
-    return copyWith(
-      color: background.computeLuminance() > 0.3 ? Colors.black : Colors.white,
-    );
-  }
 }
