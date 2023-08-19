@@ -11,4 +11,137 @@ extension ExtendTextStyle on TextStyle {
       color: background.computeLuminance() > 0.3 ? Colors.black : Colors.white,
     );
   }
+
+  TextStyle setColor(Color color) => copyWith(color: color);
+
+  TextStyle get bold => copyWith(fontWeight: FontWeight.w700);
+
+//* fontSize: 57, height: 64, fontWeight: FontWeight.w400, letterSpacing: 0,
+  TextStyle get disPlayLarge => copyWith(
+        fontSize: 57,
+        height: 64,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0,
+      );
+
+//* fontSize: 46, height: 52, fontWeight: FontWeight.w400, letterSpacing: 0,
+  TextStyle get disPlayMedium => copyWith(
+        fontSize: 46,
+        height: 52,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0,
+      );
+
+//* fontSize: 34, height: 40, fontWeight: FontWeight.w400, letterSpacing: 0,
+  TextStyle get disPlaySmall => copyWith(
+        fontSize: 34,
+        height: 40,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0,
+      );
+
+//* fontSize: 28, height: 36, fontWeight: FontWeight.w400, letterSpacing: 0,
+  TextStyle get headlineLarge => copyWith(
+        fontSize: 32,
+        height: 40,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0,
+      );
+
+//* fontSize: 28, height: 36, fontWeight: FontWeight.w400, letterSpacing: 0,
+  TextStyle get headlineMedium => copyWith(
+        fontSize: 28,
+        height: 36,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0,
+      );
+
+//* fontSize: 24, height: 32, fontWeight: FontWeight.w400, letterSpacing: 0,
+  TextStyle get headlineSmall => copyWith(
+        fontSize: 24,
+        height: 32,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0,
+      );
+
+//* fontSize: 22, height: 28, fontWeight: FontWeight.w400, letterSpacing: 0,
+  TextStyle get titleLarge => copyWith(
+        fontSize: 22,
+        height: 28,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0,
+      );
+
+//* fontSize: 16, height: 24, fontWeight: FontWeight.w500, letterSpacing: 0.15,
+  TextStyle get titleMedium => copyWith(
+        fontSize: 16,
+        height: 24,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.15,
+      );
+
+//* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
+  TextStyle get titleSmall => copyWith(
+        fontSize: 14,
+        height: 20,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.1,
+      );
+
+//* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
+  TextStyle get labelLarge => copyWith(
+        fontSize: 14,
+        height: 20,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.1,
+      );
+
+//* fontSize: 12, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.5,
+  TextStyle get labelMedium => copyWith(
+        fontSize: 12,
+        height: 16,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.5,
+      );
+
+//* fontSize: 11, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.5,
+  TextStyle get labelSmall => copyWith(
+        fontSize: 11,
+        height: 16,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.5,
+      );
+
+//* fontSize: 16, height: 24, fontWeight: FontWeight.w400, letterSpacing: 0.15,
+  TextStyle get bodyLarge => copyWith(
+        fontSize: 16,
+        height: 24,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.15,
+      );
+
+//* fontSize: 14, height: 20, fontWeight: FontWeight.w400, letterSpacing: 0.25,
+  TextStyle get bodyMedium => copyWith(
+        fontSize: 14,
+        height: 20,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.25,
+      );
+
+//* fontSize: 12, height: 16, fontWeight: FontWeight.w400, letterSpacing: 0.4,
+  TextStyle get bodySmall => copyWith(
+        fontSize: 12,
+        height: 16,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.4,
+      );
+
+//* fontSize: 12, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.4,
+  TextStyle get captionLarge => bodySmall;
+
+//* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
+  TextStyle get button => labelLarge;
+
+//* fontSize: 11, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.4,
+  TextStyle get overline => labelSmall;
 }
