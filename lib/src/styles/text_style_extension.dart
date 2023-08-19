@@ -19,7 +19,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 57, height: 64, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get displayLarge => copyWith(
         fontSize: 57,
-        height: 64,
+        height: 64 / 57,
         fontWeight: FontWeight.w400,
         letterSpacing: 0,
       );
@@ -27,7 +27,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 46, height: 52, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get displayMedium => copyWith(
         fontSize: 46,
-        height: 52,
+        height: 52 / 46,
         fontWeight: FontWeight.w400,
         letterSpacing: 0,
       );
@@ -35,7 +35,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 34, height: 40, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get displaySmall => copyWith(
         fontSize: 34,
-        height: 40,
+        height: 40 / 34,
         fontWeight: FontWeight.w400,
         letterSpacing: 0,
       );
@@ -43,7 +43,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 28, height: 36, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get headlineLarge => copyWith(
         fontSize: 32,
-        height: 40,
+        height: 40 / 32,
         fontWeight: FontWeight.w400,
         letterSpacing: 0,
       );
@@ -51,7 +51,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 28, height: 36, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get headlineMedium => copyWith(
         fontSize: 28,
-        height: 36,
+        height: 36 / 28,
         fontWeight: FontWeight.w400,
         letterSpacing: 0,
       );
@@ -67,7 +67,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 22, height: 28, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get titleLarge => copyWith(
         fontSize: 22,
-        height: 28,
+        height: 28 / 22,
         fontWeight: FontWeight.w400,
         letterSpacing: 0,
       );
@@ -75,7 +75,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 16, height: 24, fontWeight: FontWeight.w500, letterSpacing: 0.15,
   TextStyle get titleMedium => copyWith(
         fontSize: 16,
-        height: 24,
+        height: 24 / 16,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.15,
       );
@@ -83,7 +83,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
   TextStyle get titleSmall => copyWith(
         fontSize: 14,
-        height: 20,
+        height: 20 / 14,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.1,
       );
@@ -99,7 +99,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 12, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.5,
   TextStyle get labelMedium => copyWith(
         fontSize: 12,
-        height: 16,
+        height: 16 / 12,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.5,
       );
@@ -107,7 +107,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 11, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.5,
   TextStyle get labelSmall => copyWith(
         fontSize: 11,
-        height: 16,
+        height: 16 / 11,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.5,
       );
@@ -115,7 +115,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 16, height: 24, fontWeight: FontWeight.w400, letterSpacing: 0.15,
   TextStyle get bodyLarge => copyWith(
         fontSize: 16,
-        height: 24,
+        height: 24 / 16,
         fontWeight: FontWeight.w400,
         letterSpacing: 0.15,
       );
@@ -123,7 +123,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 14, height: 20, fontWeight: FontWeight.w400, letterSpacing: 0.25,
   TextStyle get bodyMedium => copyWith(
         fontSize: 14,
-        height: 20,
+        height: 20 / 14,
         fontWeight: FontWeight.w400,
         letterSpacing: 0.25,
       );
@@ -131,7 +131,7 @@ extension ExtendTextStyle on TextStyle {
 //* fontSize: 12, height: 16, fontWeight: FontWeight.w400, letterSpacing: 0.4,
   TextStyle get bodySmall => copyWith(
         fontSize: 12,
-        height: 16,
+        height: 16 / 12,
         fontWeight: FontWeight.w400,
         letterSpacing: 0.4,
       );
