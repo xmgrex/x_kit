@@ -5,7 +5,8 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 Future<void> showPlatformModalBottomSheet({
   required BuildContext context,
-  required Widget widget,
+  required Widget Function(BuildContext) builder,
+  Color? backgroundColor,
   Color? barrierColor,
   Duration duration = const Duration(milliseconds: 300),
   Curve animationCurve = Curves.easeOutCirc,
@@ -18,11 +19,12 @@ Future<void> showPlatformModalBottomSheet({
       expand: expand,
       enableDrag: enableDrag,
       animationCurve: animationCurve,
+      backgroundColor: backgroundColor,
       barrierColor: barrierColor ?? Colors.black.withOpacity(.8),
       previousRouteAnimationCurve: previousRouteAnimationCurve,
       context: context,
       duration: duration,
-      builder: (context) => widget,
+      builder: builder,
     );
   } else {
     await showMaterialModalBottomSheet<void>(
@@ -30,9 +32,10 @@ Future<void> showPlatformModalBottomSheet({
       enableDrag: enableDrag,
       animationCurve: animationCurve,
       duration: duration,
+      backgroundColor: backgroundColor,
       barrierColor: barrierColor ?? Colors.black.withOpacity(.8),
       context: context,
-      builder: (context) => widget,
+      builder: builder,
     );
   }
 }
