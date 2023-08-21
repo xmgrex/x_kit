@@ -16,3 +16,4 @@ export 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 export 'package:flutter_scale_tap/flutter_scale_tap.dart';
 export 'package:expandable/expandable.dart';
 export 'package:flutter_iconly/flutter_iconly.dart';
+export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
