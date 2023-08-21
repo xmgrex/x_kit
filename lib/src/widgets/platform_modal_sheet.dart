@@ -2,10 +2,16 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+enum AdaptiveModalSheetType {
+  adaptive,
+  material,
+  cupertino,
+}
 
-Future<void> showPlatformModalBottomSheet({
+Future<void> showAdaptiveModalBottomSheet({
   required BuildContext context,
   required Widget Function(BuildContext) builder,
+  AdaptiveModalSheetType type = AdaptiveModalSheetType.adaptive,
   Color? backgroundColor,
   Color? barrierColor,
   Duration duration = const Duration(milliseconds: 300),
@@ -14,8 +20,8 @@ Future<void> showPlatformModalBottomSheet({
   bool expand = false,
   bool enableDrag = true,
 }) async {
-  if (Platform.isIOS) {
-    await showCupertinoModalBottomSheet<void>(
+  void showModalSheet(Function showFunction) {
+    showFunction(
       expand: expand,
       enableDrag: enableDrag,
       animationCurve: animationCurve,
@@ -26,17 +32,22 @@ Future<void> showPlatformModalBottomSheet({
       duration: duration,
       builder: builder,
     );
-  } else {
-    await showMaterialModalBottomSheet<void>(
-      expand: expand,
-      enableDrag: enableDrag,
-      animationCurve: animationCurve,
-      duration: duration,
-      backgroundColor: backgroundColor,
-      barrierColor: barrierColor ?? Colors.black.withOpacity(.8),
-      context: context,
-      builder: builder,
-    );
+  }
+
+  switch (type) {
+    case AdaptiveModalSheetType.adaptive:
+      if (Platform.isIOS) {
+        showModalSheet(showCupertinoModalBottomSheet);
+      } else {
+        showModalSheet(showMaterialModalBottomSheet);
+      }
+      break;
+    case AdaptiveModalSheetType.material:
+      showModalSheet(showMaterialModalBottomSheet);
+      break;
+    case AdaptiveModalSheetType.cupertino:
+      showModalSheet(showCupertinoModalBottomSheet);
+      break;
   }
 }
 
