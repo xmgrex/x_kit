@@ -137,7 +137,7 @@ extension ExtendTextStyle on TextStyle {
       );
 
 ///* fontSize: 12, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.4,
-  TextStyle get captionLarge => bodySmall;
+  TextStyle get caption => bodySmall;
 
 ///* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
   TextStyle get button => labelLarge;
