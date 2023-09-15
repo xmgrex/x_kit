@@ -144,4 +144,6 @@ extension ExtendTextStyle on TextStyle {
 
 ///* fontSize: 11, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.4,
   TextStyle get overline => labelSmall;
+
+  TextStyle get underline => copyWith(decoration: TextDecoration.underline);
 }
