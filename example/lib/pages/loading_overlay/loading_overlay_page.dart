@@ -13,16 +13,20 @@ class _LoadingOverlayPageState extends State<LoadingOverlayPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Loading Overlay'),
-      ),
       body: LoadingOverlay(
+        backgroundColor: Colors.black.withOpacity(.9),
         isLoading: isLoading,
-        child: Center(
-          child: ElevatedButton(
-            onPressed: loading,
-            child: const Text('Show Loading Overlay'),
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('Loading Overlay'),
+            Center(
+              child: ElevatedButton(
+                onPressed: loading,
+                child: const Text('Show Loading Overlay'),
+              ),
+            ),
+          ],
         ),
       ),
     );
