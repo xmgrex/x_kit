@@ -1,4 +1,5 @@
 import 'package:example/pages/cupertino_text_field/cupertino_text_field.dart';
+import 'package:example/pages/loading_overlay/loading_overlay_page.dart';
 import 'package:example/pages/text_style/text_styles_page.dart';
 import 'package:flutter/material.dart';
 import 'package:example/cool_toolbar/items.dart';
@@ -8,6 +9,7 @@ const pages = [
   TextStyleExample(),
   // ModalBottomSheetPage(),
   CupertinoTextFieldTest(),
+  LoadingOverlayPage(),
   SizedBox(child: Text('1')),
   SizedBox(child: Text('2')),
   SizedBox(child: Text('3')),
