@@ -1,13 +1,14 @@
 # This is a generated file; do not edit or check into version control.
 dynamic_color=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/dynamic_color-1.6.7/
-macos_ui=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/macos_ui-1.7.6/
-path_provider=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider-2.0.15/
-path_provider_android=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider_android-2.0.22/
-path_provider_foundation=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider_foundation-2.1.1/
-path_provider_linux=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider_linux-2.1.7/
-path_provider_windows=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider_windows-2.1.7/
-share_plus=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/share_plus-7.0.2/
-sqflite=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/sqflite-2.2.4+1/
-url_launcher_linux=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/url_launcher_linux-3.0.5/
-url_launcher_web=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/url_launcher_web-2.0.17/
-url_launcher_windows=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/url_launcher_windows-3.0.6/
+macos_ui=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/macos_ui-2.0.0/
+macos_window_utils=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/macos_window_utils-1.4.0/
+path_provider=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider-2.1.1/
+path_provider_android=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider_android-2.2.0/
+path_provider_foundation=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.1/
+path_provider_linux=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+path_provider_windows=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1/
+share_plus=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/share_plus-7.1.0/
+sqflite=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/sqflite-2.3.0/
+url_launcher_linux=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/url_launcher_linux-3.0.6/
+url_launcher_web=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/url_launcher_web-2.0.20/
+url_launcher_windows=/Users/kyouyagenki/.pub-cache/hosted/pub.dev/url_launcher_windows-3.0.8/
