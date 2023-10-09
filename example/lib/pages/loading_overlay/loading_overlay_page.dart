@@ -14,7 +14,6 @@ class _LoadingOverlayPageState extends State<LoadingOverlayPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: LoadingOverlay(
-        backgroundColor: Colors.black.withOpacity(.9),
         isLoading: isLoading,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -12,21 +12,24 @@ class LoadingOverlay extends StatelessWidget {
     this.loadingWidget,
     this.text,
     this.textStyle,
-    this.backgroundColor,
+    this.backgroundColor = Colors.black,
+    this.opacity = 0.5,
   });
 
   final Widget child;
   final Widget? loadingWidget;
   final bool isLoading;
-  final Color? backgroundColor;
+  final Color backgroundColor;
   final String? text;
   final TextStyle? textStyle;
+  final double opacity;
 
   @override
   Widget build(BuildContext context) {
     return loading_overlay.LoadingOverlay(
       isLoading: isLoading,
-      color: backgroundColor ?? Colors.black.withOpacity(.9),
+      color: backgroundColor,
+      opacity: opacity,
       progressIndicator: Scaffold(
         backgroundColor: Colors.transparent,
         body: Center(
