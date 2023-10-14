@@ -27,4 +27,6 @@ extension ContextEx on BuildContext {
       SnackBar snackBar) {
     return ScaffoldMessenger.of(this).showSnackBar(snackBar);
   }
+
+  void Function() get pop => Navigator.of(this).pop;
 }
