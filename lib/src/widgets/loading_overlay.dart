@@ -31,7 +31,7 @@ class LoadingOverlay extends StatelessWidget {
       color: backgroundColor,
       opacity: opacity,
       progressIndicator: Scaffold(
-        backgroundColor: Colors.transparent,
+        backgroundColor: backgroundColor.withOpacity(opacity),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
