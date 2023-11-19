@@ -47,4 +47,8 @@ extension DateTimeEx on DateTime {
     }
     return dates;
   }
+
+  DateTime toYMD() {
+    return DateTime(year, month, day);
+  }
 }
