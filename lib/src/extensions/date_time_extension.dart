@@ -51,4 +51,20 @@ extension DateTimeEx on DateTime {
   DateTime toYMD() {
     return DateTime(year, month, day);
   }
+
+  String toYMDString({String separator = '/'}) {
+    final monthString =
+        month.toString().length == 1 ? '$month'.padLeft(2, '0') : '$month';
+    final dayString =
+        day.toString().length == 1 ? '$day'.padLeft(2, '0') : '$day';
+    return '$year$separator$monthString$separator$dayString';
+  }
+
+  String toMDString({String separator = '/'}) {
+    final monthString =
+        month.toString().length == 1 ? '$month'.padLeft(2, '0') : '$month';
+    final dayString =
+        day.toString().length == 1 ? '$day'.padLeft(2, '0') : '$day';
+    return '$monthString$separator$dayString';
+  }
 }
