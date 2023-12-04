@@ -22,7 +22,6 @@ dependencies:
   json_annotation: ^4.8.1
 
   simple_logger: ^1.9.0+3
-  talker_flutter: ^3.1.5
 
   # https://pub.dev/packages/cached_network_image
   cached_network_image: ^3.3.0
