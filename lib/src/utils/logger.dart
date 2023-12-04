@@ -7,7 +7,3 @@ final SimpleLogger logger = SimpleLogger()
     Level.ALL,
     includeCallerInfo: true,
   );
-
-extension Log on Object {
-  void log() => logger.info(toString());
-}
