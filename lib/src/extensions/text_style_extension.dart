@@ -1,4 +1,4 @@
-part of styles;
+part of extensions;
 
 extension ExtendTextStyle on TextStyle {
   TextStyle onTheme(BuildContext context) {

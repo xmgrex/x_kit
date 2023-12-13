@@ -1,3 +1,5 @@
+part of extensions;
+
 extension DateTimeEx on DateTime {
   bool isEqualToDate(DateTime date) {
     return difference(date).inDays == 0 && day == date.day;

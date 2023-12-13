@@ -1,3 +1,5 @@
+part of extensions;
+
 extension StringEx on String {
   num get toNum => num.parse(this);
 
