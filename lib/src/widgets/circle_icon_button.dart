@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+part of widgets;
+
 class CircleIconButton extends StatelessWidget {
   const CircleIconButton(
       {super.key,

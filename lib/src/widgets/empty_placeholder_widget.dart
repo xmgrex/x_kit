@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of widgets;
 
 /// Placeholder widget showing a message and CTA to go back to the home screen.
 class EmptyPlaceholderWidget extends StatelessWidget {

@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_scale_tap/flutter_scale_tap.dart';
-
-import '../../../x_kit.dart';
-import 'constants.dart';
+part of widgets;
 
 class CoolToolbar extends StatefulWidget {
   const CoolToolbar({Key? key, required this.toolbarItems, this.radius = 12,

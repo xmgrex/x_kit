@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-
-import '../../../x_kit.dart';
+part of widgets;
 
 class SlideToolbar extends StatefulWidget {
   const SlideToolbar(

@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:nested/nested.dart';
+part of widgets;
 
 class UnfocusOnTap extends SingleChildStatelessWidget {
   const UnfocusOnTap({

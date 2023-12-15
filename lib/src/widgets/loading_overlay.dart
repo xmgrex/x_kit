@@ -1,8 +1,4 @@
-import 'dart:io';
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:loading_overlay/loading_overlay.dart' as loading_overlay;
+part of widgets;
 
 class LoadingOverlay extends StatelessWidget {
   const LoadingOverlay({

@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-
-import 'constants.dart';
+part of widgets;
 
 class ToolbarItemData {
   final String title;

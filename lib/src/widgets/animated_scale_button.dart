@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_scale_tap/flutter_scale_tap.dart';
+part of widgets;
 
 const loadingSpinner = SizedBox(
   width: 24,
