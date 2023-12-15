@@ -18,7 +18,7 @@ class _CoolToolbarState extends State<CoolToolbar> {
   late ScrollController scrollController;
 
   double get itemHeight =>
-      Constants.toolbarWidth - (Constants.toolbarHorizontalPadding * 2);
+      CoolToolbarConstants.toolbarWidth - (CoolToolbarConstants.toolbarHorizontalPadding * 2);
 
   /// List of item scales
   ///
@@ -52,7 +52,7 @@ class _CoolToolbarState extends State<CoolToolbar> {
     List<double> _itemScrollScaleValues = [];
     List<double> _itemYPositions = [];
     for (int i = 0; i <= widget.toolbarItems.length - 1; i++) {
-      double itemTopPosition = i * (itemHeight + Constants.itemsGutter);
+      double itemTopPosition = i * (itemHeight + CoolToolbarConstants.itemsGutter);
       // Storing y position values of the items with the scrollPosition value subtracted
       // gives the location of the item relative to the toolbar container
       // For example, at first, item 1 is at the top with a position of 0,
@@ -65,11 +65,11 @@ class _CoolToolbarState extends State<CoolToolbar> {
       // and the position of the bottom edge of the toolbar container plus scroll position
       // A negative value means that the item is out of view below the toolbar container
       double distanceToMaxScrollExtent =
-          Constants.toolbarHeight + scrollPosition - itemTopPosition;
+          CoolToolbarConstants.toolbarHeight + scrollPosition - itemTopPosition;
 
       // Position of the bottom edge of the item
       double itemBottomPosition =
-          (i + 1) * (itemHeight + Constants.itemsGutter);
+          (i + 1) * (itemHeight + CoolToolbarConstants.itemsGutter);
       // An item is out of view if it's out of view below the toolbar
       // OR if it's out of view above the toolbar (where the scroll position is further than
       // the position of the bottom edge of the item
@@ -101,7 +101,7 @@ class _CoolToolbarState extends State<CoolToolbar> {
           longPressYLocation <
               (itemYPositions.length > i + 1
                   ? itemYPositions[i + 1]
-                  : Constants.toolbarHeight);
+                  : CoolToolbarConstants.toolbarHeight);
       _longPressedItemsFlags.add(isLongPressed);
     }
     setState(() {
@@ -128,14 +128,14 @@ class _CoolToolbarState extends State<CoolToolbar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: Constants.toolbarHeight,
-      width: Constants.toolbarWidth,
+      height: CoolToolbarConstants.toolbarHeight,
+      width: CoolToolbarConstants.toolbarWidth,
       margin: const EdgeInsets.only(left: 8, top: 64),
       child: Stack(
         children: [
           Positioned(
             child: Container(
-              width: Constants.toolbarWidth,
+              width: CoolToolbarConstants.toolbarWidth,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(widget.radius),

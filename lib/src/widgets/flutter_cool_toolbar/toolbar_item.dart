@@ -40,13 +40,13 @@ class ToolbarItem extends StatelessWidget {
           children: [
             AnimatedScale(
               scale: scrollScale,
-              duration: Constants.scrollScaleAnimationDuration,
-              curve: Constants.scrollScaleAnimationCurve,
+              duration: CoolToolbarConstants.scrollScaleAnimationDuration,
+              curve: CoolToolbarConstants.scrollScaleAnimationCurve,
               child: AnimatedContainer(
-                duration: Constants.longPressAnimationDuration,
-                curve: Constants.longPressAnimationCurve,
+                duration: CoolToolbarConstants.longPressAnimationDuration,
+                curve: CoolToolbarConstants.longPressAnimationCurve,
                 height: height + (isLongPressed ? 10 : 0),
-                width: isLongPressed ? Constants.toolbarWidth * 2 : height,
+                width: isLongPressed ? CoolToolbarConstants.toolbarWidth * 2 : height,
                 decoration: BoxDecoration(
                   color: toolbarItem.color,
                   borderRadius: BorderRadius.circular(radius),
@@ -60,25 +60,25 @@ class ToolbarItem extends StatelessWidget {
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(
                   bottom: gutter,
-                  left: isLongPressed ? Constants.itemsOffset : 0,
+                  left: isLongPressed ? CoolToolbarConstants.itemsOffset : 0,
                 ),
               ),
             ),
             Positioned.fill(
               child: AnimatedPadding(
-                duration: Constants.longPressAnimationDuration,
-                curve: Constants.longPressAnimationCurve,
+                duration: CoolToolbarConstants.longPressAnimationDuration,
+                curve: CoolToolbarConstants.longPressAnimationCurve,
                 padding: EdgeInsets.only(
                   bottom: gutter,
-                  left: 12 + (isLongPressed ? Constants.itemsOffset : 0),
+                  left: 12 + (isLongPressed ? CoolToolbarConstants.itemsOffset : 0),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     AnimatedScale(
                       scale: scrollScale,
-                      duration: Constants.scrollScaleAnimationDuration,
-                      curve: Constants.scrollScaleAnimationCurve,
+                      duration: CoolToolbarConstants.scrollScaleAnimationDuration,
+                      curve: CoolToolbarConstants.scrollScaleAnimationCurve,
                       child: Icon(
                         toolbarItem.icon,
                         color: Colors.white,
@@ -87,8 +87,8 @@ class ToolbarItem extends StatelessWidget {
                     const SizedBox(width: 12),
                     Expanded(
                       child: AnimatedOpacity(
-                        duration: Constants.longPressAnimationDuration,
-                        curve: Constants.longPressAnimationCurve,
+                        duration: CoolToolbarConstants.longPressAnimationDuration,
+                        curve: CoolToolbarConstants.longPressAnimationCurve,
                         opacity: isLongPressed ? 1 : 0,
                         child: Text(
                           toolbarItem.title,

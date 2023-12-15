@@ -1,6 +1,6 @@
 part of widgets;
 
-class Constants {
+class CoolToolbarConstants {
   static const double itemsGutter = 10;
   static const double toolbarHeight = 540;
   static const double toolbarWidth = 70;
