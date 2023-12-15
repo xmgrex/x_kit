@@ -1,11 +1,13 @@
 import 'package:example/pages/cupertino_text_field/cupertino_text_field.dart';
 import 'package:example/pages/loading_overlay/loading_overlay_page.dart';
 import 'package:example/pages/text_style/text_styles_page.dart';
+import 'package:example/pages/text_style/x_text_page.dart';
 import 'package:flutter/material.dart';
 import 'package:example/cool_toolbar/items.dart';
 import 'package:x_kit/x_kit.dart';
 
 const pages = [
+  XTextExample(),
   TextStyleExample(),
   // ModalBottomSheetPage(),
   CupertinoTextFieldTest(),

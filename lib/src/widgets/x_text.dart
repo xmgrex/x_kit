@@ -20,7 +20,7 @@ class XText extends StatelessWidget {
   }) : style = Platform.isIOS
             ? const TextStyle().headlineMedium
             : CupertinoTextStyles.title1;
-  XText.tittle2(
+  XText.title2(
     this.text, {
     super.key,
     this.color,
@@ -68,6 +68,17 @@ class XText extends StatelessWidget {
   }) : style = Platform.isIOS
             ? const TextStyle().bodyMedium
             : CupertinoTextStyles.callOut;
+
+  XText.subHeadline(
+    this.text, {
+    super.key,
+    this.color,
+    this.textAlign,
+    this.maxLines,
+  }) : style = Platform.isIOS
+            ? const TextStyle().titleMedium
+            : CupertinoTextStyles.subHeadline;
+
   XText.footnote(
     this.text, {
     super.key,
@@ -101,6 +112,14 @@ class XText extends StatelessWidget {
           fontWeight: Platform.isIOS ? FontWeight.w600 : FontWeight.w700,
         ),
       );
+
+  XText setColor(Color color) => copyWith(color: color);
+
+  XText colorFromBg(Color background) {
+    return copyWith(
+      color: background.computeLuminance() > 0.3 ? Colors.black : Colors.white,
+    );
+  }
 
   const XText(
     this.text, {
