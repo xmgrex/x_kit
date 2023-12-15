@@ -33,12 +33,14 @@ extension ExtendTextStyle on TextStyle {
       );
 
   ///* fontSize: 34, height: 40, fontWeight: FontWeight.w400, letterSpacing: 0,
-  TextStyle get displaySmall => copyWith(
-        fontSize: 34,
-        height: 40 / 34,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 0,
-      );
+  TextStyle get displaySmall => Platform.isIOS
+      ? CupertinoTextStyles.largeTitle
+      : copyWith(
+          fontSize: 34,
+          height: 40 / 34,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 0,
+        );
 
   ///* fontSize: 28, height: 36, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get headlineLarge => copyWith(
@@ -49,12 +51,14 @@ extension ExtendTextStyle on TextStyle {
       );
 
   ///* fontSize: 28, height: 36, fontWeight: FontWeight.w400, letterSpacing: 0,
-  TextStyle get headlineMedium => copyWith(
-        fontSize: 28,
-        height: 36 / 28,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 0,
-      );
+  TextStyle get headlineMedium => Platform.isIOS
+      ? CupertinoTextStyles.title1
+      : copyWith(
+          fontSize: 28,
+          height: 36 / 28,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 0,
+        );
 
 //* fontSize: 24, height: 32, fontWeight: FontWeight.w400, letterSpacing: 0,
   TextStyle get headlineSmall => copyWith(
@@ -65,20 +69,24 @@ extension ExtendTextStyle on TextStyle {
       );
 
   ///* fontSize: 22, height: 28, fontWeight: FontWeight.w400, letterSpacing: 0,
-  TextStyle get titleLarge => copyWith(
-        fontSize: 22,
-        height: 28 / 22,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 0,
-      );
+  TextStyle get titleLarge => Platform.isIOS
+      ? CupertinoTextStyles.title2
+      : copyWith(
+          fontSize: 22,
+          height: 28 / 22,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 0,
+        );
 
   ///* fontSize: 16, height: 24, fontWeight: FontWeight.w500, letterSpacing: 0.15,
-  TextStyle get titleMedium => copyWith(
-        fontSize: 16,
-        height: 24 / 16,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.15,
-      );
+  TextStyle get titleMedium => Platform.isIOS
+      ? CupertinoTextStyles.title3
+      : copyWith(
+          fontSize: 16,
+          height: 24 / 16,
+          fontWeight: FontWeight.w500,
+          letterSpacing: 0.15,
+        );
 
   ///* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
   TextStyle get titleSmall => copyWith(
@@ -89,12 +97,14 @@ extension ExtendTextStyle on TextStyle {
       );
 
   ///* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
-  TextStyle get labelLarge => copyWith(
-        fontSize: 14,
-        height: 20 / 14,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.1,
-      );
+  TextStyle get labelLarge => Platform.isIOS
+      ? CupertinoTextStyles.callOut
+      : copyWith(
+          fontSize: 14,
+          height: 20 / 14,
+          fontWeight: FontWeight.w500,
+          letterSpacing: 0.1,
+        );
 
   ///* fontSize: 12, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.5,
   TextStyle get labelMedium => copyWith(
@@ -113,31 +123,38 @@ extension ExtendTextStyle on TextStyle {
       );
 
   ///* fontSize: 16, height: 24, fontWeight: FontWeight.w400, letterSpacing: 0.15,
-  TextStyle get bodyLarge => copyWith(
-        fontSize: 16,
-        height: 24 / 16,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 0.15,
-      );
+  TextStyle get bodyLarge => Platform.isIOS
+      ? CupertinoTextStyles.body
+      : copyWith(
+          fontSize: 16,
+          height: 24 / 16,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 0.15,
+        );
 
   ///* fontSize: 14, height: 20, fontWeight: FontWeight.w400, letterSpacing: 0.25,
-  TextStyle get bodyMedium => copyWith(
-        fontSize: 14,
-        height: 20 / 14,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 0.25,
-      );
+  TextStyle get bodyMedium => Platform.isIOS
+      ? CupertinoTextStyles.subHeadline
+      : copyWith(
+          fontSize: 14,
+          height: 20 / 14,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 0.25,
+        );
 
   ///* fontSize: 12, height: 16, fontWeight: FontWeight.w400, letterSpacing: 0.4,
-  TextStyle get bodySmall => copyWith(
-        fontSize: 12,
-        height: 16 / 12,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 0.4,
-      );
+  TextStyle get bodySmall => Platform.isIOS
+      ? CupertinoTextStyles.footnote
+      : copyWith(
+          fontSize: 12,
+          height: 16 / 12,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 0.4,
+        );
 
   ///* fontSize: 12, height: 16, fontWeight: FontWeight.w500, letterSpacing: 0.4,
-  TextStyle get caption => bodySmall;
+  TextStyle get caption =>
+      Platform.isIOS ? CupertinoTextStyles.caption1 : bodySmall;
 
   ///* fontSize: 14, height: 20, fontWeight: FontWeight.w500, letterSpacing: 0.1,
   TextStyle get button => labelLarge;
