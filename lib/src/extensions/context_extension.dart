@@ -22,7 +22,7 @@ extension ContextEx on BuildContext {
 
   double get screenWidth => MediaQuery.of(this).size.width;
 
-  ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnack(
+  ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackBar(
       SnackBar snackBar) {
     return ScaffoldMessenger.of(this).showSnackBar(snackBar);
   }
