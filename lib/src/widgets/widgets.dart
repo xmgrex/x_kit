@@ -20,3 +20,4 @@ part './flutter_cool_toolbar/constants.dart';
 part './flutter_cool_toolbar/cool_toolbar.dart';
 part './circle_icon_button.dart';
 part './unfocus_on_tap.dart';
+part './x_text.dart';
