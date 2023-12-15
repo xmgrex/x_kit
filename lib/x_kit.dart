@@ -11,6 +11,7 @@ export 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 export 'package:flutter_riverpod/flutter_riverpod.dart';
 export 'package:flutter_scale_tap/flutter_scale_tap.dart';
 export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+export 'package:animate_do/animate_do.dart';
 
 export 'src/converter/converter.dart';
 export 'src/extensions/extensions.dart';

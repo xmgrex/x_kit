@@ -3,9 +3,9 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  cloud_firestore
   dynamic_color
-  share_plus
-  url_launcher_windows
+  firebase_core
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
