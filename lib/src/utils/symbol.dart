@@ -1,12 +1,6 @@
 import 'package:currency_formatter/currency_formatter.dart';
 
-String symbolFormatter(dynamic amount, {String? currency}) {
-  final c = CurrencyFormatterSettings.local;
-  final formatter = currency != null
-      ? CurrencyFormatter.majors[currency.toLowerCase()]!
-      : c ?? CurrencyFormatterSettings.jpy;
-  return CurrencyFormatter.format(
-    amount,
-    formatter,
-  );
+String symbolFormatter(num amount, {String? code, String? symbol}) {
+  final settings = CurrencyFormat(symbol: symbol ?? '¥', code: code ?? 'jpy');
+  return CurrencyFormatter.format(amount, settings, compact: true);
 }

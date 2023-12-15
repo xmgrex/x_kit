@@ -48,12 +48,14 @@ dependencies:
   flutter_iconly: ^1.0.2
 
   flutter_font_icons: ^2.2.4
+  eva_icons_flutter: ^3.1.0
+  carbon_icons: ^0.0.1+2
 
   #https://pub.dev/packages/adaptive_dialog/install
   adaptive_dialog: ^1.10.0
 
   #https://pub.dev/packages/currency_formatter
-  currency_formatter: ^2.1.0
+  currency_formatter: ^2.2.0
 
   nested: ^1.0.0
 
