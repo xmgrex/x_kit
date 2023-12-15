@@ -121,6 +121,32 @@ class XText extends StatelessWidget {
     );
   }
 
+  XText get black => copyWith(color: const Color(0xFF000000));
+
+  XText get white => copyWith(color: const Color(0xFFFFFFFF));
+
+  XText get grey => copyWith(color: const Color(0xFF8E8E93));
+
+  XText get success => copyWith(color: const Color(0xFF34C759));
+
+  XText get error => copyWith(color: const Color(0xFFFF3B30));
+
+  XText get warning => copyWith(color: const Color(0xFFFF9500));
+
+  XText get link => copyWith(color: const Color(0xFF0A84FF));
+
+  XText get underline => copyWith(
+        style: style.copyWith(decoration: TextDecoration.underline),
+      );
+
+  XText get lineThrough => copyWith(
+        style: style.copyWith(decoration: TextDecoration.lineThrough),
+      );
+
+  XText get overline => copyWith(
+        style: style.copyWith(decoration: TextDecoration.overline),
+      );
+
   const XText(
     this.text, {
     super.key,
