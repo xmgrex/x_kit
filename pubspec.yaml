@@ -12,14 +12,12 @@ dependencies:
     sdk: flutter
 
   #https://pub.dev/packages/flutter_riverpod
-  flutter_riverpod: ^2.4.5
+  flutter_riverpod: ^2.4.9
 
   # https://pub.dev/packages/firebase_core
-  firebase_core: ^2.22.0
+  firebase_core: ^2.24.2
   # https://pub.dev/packages/cloud_firestore
-  cloud_firestore: ^4.13.0
-
-  json_annotation: ^4.8.1
+  cloud_firestore: ^4.13.6
 
   simple_logger: ^1.9.0+3
 
