@@ -17,6 +17,7 @@ dependencies:
   firebase_core: ^2.24.2
   # https://pub.dev/packages/cloud_firestore
   cloud_firestore: ^4.13.6
+
   json_annotation: ^4.8.1
 
 
