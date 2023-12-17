@@ -10,7 +10,7 @@ class NotFoundPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: XText.headline('404 Page not found :(').black,
+        child: XText.headline('404 Page not found :(').bold,
       ),
     );
   }
