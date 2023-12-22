@@ -121,6 +121,8 @@ class XText extends StatelessWidget {
     );
   }
 
+  TextStyle get textStyle => style;
+
   XText get black => copyWith(color: const Color(0xFF000000));
 
   XText get white => copyWith(color: const Color(0xFFFFFFFF));
