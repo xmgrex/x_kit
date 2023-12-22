@@ -14,6 +14,7 @@ export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 export 'package:animate_do/animate_do.dart';
 export 'package:adaptive_dialog/adaptive_dialog.dart';
 export 'package:firebase_ui_localizations/firebase_ui_localizations.dart';
+export 'package:flutter_localizations/flutter_localizations.dart';
 
 export 'src/converter/converter.dart';
 export 'src/extensions/extensions.dart';
