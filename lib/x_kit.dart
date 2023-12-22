@@ -22,3 +22,4 @@ export 'src/router/router.dart';
 export 'src/styles/styles.dart';
 export 'src/utils/utils.dart';
 export 'src/widgets/widgets.dart';
+export 'src/firebase/firebase_x_kit.dart';
