@@ -10,6 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  firebase_ui_localizations: ^1.6.1
 
   #https://pub.dev/packages/flutter_riverpod
   flutter_riverpod: ^2.4.9
