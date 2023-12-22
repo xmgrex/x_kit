@@ -1,5 +1,20 @@
 part of firebase_x_kit;
 
+final localizationsDelegates = [
+  FirebaseUILocalizations.withDefaultOverrides(
+    const FirebaseUILabelOverrides(),
+  ),
+  FirebaseUILocalizations.delegate,
+  GlobalMaterialLocalizations.delegate,
+  GlobalWidgetsLocalizations.delegate,
+  GlobalCupertinoLocalizations.delegate,
+];
+
+const supportedLocales = [
+  Locale.fromSubtags(languageCode: 'en', countryCode: '374'),
+  Locale.fromSubtags(languageCode: 'ja', countryCode: '81'),
+];
+
 class FirebaseUILabelOverrides extends DefaultLocalizations {
   const FirebaseUILabelOverrides();
 
