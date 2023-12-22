@@ -1,6 +1,6 @@
 part of firebase_x_kit;
 
-final localizationsDelegates = [
+final localizationsDelegates = <LocalizationsDelegate>[
   FirebaseUILocalizations.withDefaultOverrides(
     const FirebaseUILabelOverrides(),
   ),
