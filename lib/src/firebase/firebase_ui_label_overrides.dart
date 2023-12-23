@@ -99,10 +99,10 @@ class FirebaseUILabelOverrides extends DefaultLocalizations {
   String get wrongOrNoPasswordErrorText => 'パスワードが無効です';
 
   @override
-  String get signInText => 'Sign in';
+  String get signInText => 'Welcome back 👋';
 
   @override
-  String get registerText => 'アカウント登録';
+  String get registerText => 'Hello there 👋';
 
   @override
   String get registerHintText => 'アカウントをお持ちでない方はこちら';
