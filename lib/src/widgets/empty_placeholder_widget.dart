@@ -13,7 +13,7 @@ class EmptyPlaceholderWidget extends StatelessWidget {
       child: Center(
         child: Text(
           message,
-          style: Theme.of(context).textTheme.headline4,
+          style: Theme.of(context).textTheme.headlineMedium,
           textAlign: TextAlign.center,
         ),
       ),

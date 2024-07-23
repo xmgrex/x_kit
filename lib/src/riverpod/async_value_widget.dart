@@ -24,7 +24,7 @@ class AsyncValueWidget<T> extends StatelessWidget {
             return Center(
               child: Text(
                 e.toString(),
-                style: textTheme.headline6!.copyWith(color: Colors.red),
+                style: textTheme.headlineMedium!.copyWith(color: Colors.red),
               ),
             );
           },
