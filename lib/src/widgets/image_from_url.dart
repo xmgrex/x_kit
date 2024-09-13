@@ -10,6 +10,7 @@ class ImageFromUrl extends StatelessWidget {
     this.fit,
     this.errorWidgetBackground,
     this.placeholder,
+    this.errorWidget,
     Key? key,
   }) : super(key: key);
 
@@ -20,6 +21,7 @@ class ImageFromUrl extends StatelessWidget {
   final BoxFit? fit;
   final Color? errorWidgetBackground;
   final Widget Function(BuildContext, String)? placeholder;
+  final Widget Function(BuildContext, String, Object)? errorWidget;
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +53,7 @@ class ImageFromUrl extends StatelessWidget {
                 ),
               );
             },
-        errorWidget: (context, url, dynamic error) {
+        errorWidget: errorWidget ?? (context, url, dynamic error) {
           return Container(
             height: height,
             width: width,
