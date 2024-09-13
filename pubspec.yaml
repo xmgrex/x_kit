@@ -55,7 +55,7 @@ dependencies:
   carbon_icons: ^0.0.1+2
 
   #https://pub.dev/packages/adaptive_dialog/install
-  adaptive_dialog: ^2.1.0
+  adaptive_dialog: ^2.2.0
 
   #https://pub.dev/packages/currency_formatter
   currency_formatter: ^2.2.0
