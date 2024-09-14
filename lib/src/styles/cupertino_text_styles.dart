@@ -2,13 +2,10 @@ part of styles;
 class CupertinoTextStyles {
   CupertinoTextStyles._();
 
-  static const fontFamily = "Hiragino Sans";
-
   static _toStyle(double fontSize, double height, FontWeight fontWeight,
       double letterSpacing,
       {Color? color, TextDecoration? decoration}) {
     return TextStyle(
-      fontFamily: CupertinoTextStyles.fontFamily,
       color: color,
       fontSize: fontSize,
       /// textBaseline: TextBaseline,
