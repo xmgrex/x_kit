@@ -28,18 +28,19 @@ class LoadingOverlay extends StatelessWidget {
       opacity: opacity,
       progressIndicator: Scaffold(
         backgroundColor: backgroundColor.withOpacity(opacity),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              loadingWidget ?? const _LoadingWidget(),
-              Material(
-                color: Colors.transparent,
-                child: Text(text ?? '処理中', style: textStyle),
+        body: loadingWidget ??
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const _LoadingWidget(),
+                  Material(
+                    color: Colors.transparent,
+                    child: Text(text ?? '処理中', style: textStyle),
+                  ),
+                ],
               ),
-            ],
-          ),
-        ),
+            ),
       ),
       child: child,
     );
