@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**x_kit** is a Flutter package (not an app) providing convenient widgets, utilities, and extensions to simplify common Flutter development tasks. Version 0.0.2, targeting Dart >=2.17.0 and Flutter >=1.17.0.
+**x_kit** is a Flutter package (not an app) providing convenient widgets, utilities, and extensions to simplify common Flutter development tasks. Version 0.0.2, targeting Dart >=3.0.0 and Flutter >=3.0.0.
 
 ## Common Commands
 
@@ -175,12 +175,13 @@ All support proper animation curves and gesture handling.
 
 ## Dependencies and Stack
 
-**State Management**: flutter_riverpod (^2.5.1)
-**Backend**: Firebase (core, firestore, ui_localizations)
-**Navigation**: go_router (^14.2.7)
-**UI Libraries**: cached_network_image, modal_bottom_sheet, loading_overlay, expandable, adaptive_dialog
+**State Management**: flutter_riverpod (^2.6.1)
+**Backend**: Firebase (core ^3.6.0, firestore ^5.4.0, ui_localizations ^1.15.0)
+**Navigation**: go_router (^14.6.1)
+**UI Libraries**: cached_network_image (^3.4.1), modal_bottom_sheet, loading_overlay, expandable, adaptive_dialog
 **Animations**: animate_do (^3.3.4)
 **Icons**: Multiple icon packs (FluentUI, Phosphor, Iconly, Eva, Carbon)
+**Dev Dependencies**: flutter_lints (^5.0.0)
 
 The package re-exports these dependencies so users get them automatically via `import 'package:x_kit/x_kit.dart'`.
 
